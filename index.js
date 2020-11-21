@@ -26,7 +26,9 @@ function displayMessage(s) {
   console.log(s);
   document.write(s);
   // alert(greet());
-  let element = document.querySelector("h1#greeting");
+  let element = document.getElementById('greeting');
+  console.log(element);
   element.innerText = s;
+  
   // document.addElementById("greeting").innerHTML = greet();
 }
